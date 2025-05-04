@@ -14,9 +14,11 @@ public:
 	~Array();
 
 	T& operator[](unsigned int);
-	const T& operator[](unsgined int) const;
+	const T& operator[](unsigned int) const;
 	unsigned int size() const;
 
-
+private:
+	T* _data;
+	unsigned int _size;
 
 };	

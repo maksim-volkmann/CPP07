@@ -22,6 +22,14 @@ public:
 	}
 };
 
+void age(Person &p){
+	p.makeMeOlder();
+}
+
+void printPersonInfo(const Person& p) {
+	p.printInfo();
+}
+
 template <typename T>
 void increment(T& num) {
 	num += 1;
@@ -31,17 +39,6 @@ template <typename T>
 void printStuff(const T& num) {
 	std::cout << num << std::endl;
 }
-
-//for class
-void age(Person &p){
-	p.makeMeOlder();
-}
-
-void printPersonInfo(const Person& p) {
-	p.printInfo();
-}
-
-
 
 int main(){
 	int a[] = {1, 2, 3};
